@@ -5,6 +5,9 @@ A key matrix driven Micropython on a Pi Pico, sends keypress over UART.
 Pi-Pico reads matrix on GPIO, example code is a 6x7 matrix. Pin #'s for rows and columns can be adjusted as needed in <b>main.py</b>.
 Wiring for UART is on UART0 (GPIO-0 = RX & GPIO-1 = TX)
 
+Implemented ADC monitoring:
+2nd core on Pico monitors ADC voltage and sends over UART. And/or able to set a GPIO low in order to send a LBO signal. Example in code.
+
 <h3>kb_handler.py</h3>
 
 Raspberry Pi uses UART0 (BCM-15 = TX & BCM-16 = RX) to receive incoming data from Pico.<br>
